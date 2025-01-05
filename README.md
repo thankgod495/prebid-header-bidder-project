@@ -15,27 +15,6 @@ This project implements **Header Bidding** using **Prebid.js**, following **Open
 - **Lazy Loading Ads:** Loads ads only when they are in the viewport.
 - **CI/CD Pipeline Integration:** Uses GitHub Actions for automated deployments.
 
-## Project Structure
-```
-prebid-header-bidding/
-│── src/
-│   ├── config/
-│   │   ├── adUnits.js         # Defines ad unit configurations
-│   │   ├── prebidConfig.js    # Prebid.js configuration setup
-│   ├── core/
-│   │   ├── bidRequest.js      # Generates OpenRTB 2.6 compliant bid requests
-│   │   ├── bidHandler.js      # Handles bid responses
-│   │   ├── fallbackAd.js      # Displays fallback ads when no valid bids
-│   │   ├── lazyLoad.js        # Implements lazy loading for ads
-│   ├── analytics/
-│   │   ├── analytics.js       # Sends bid data to Google Analytics
-│   ├── ci-cd/
-│   │   ├── github-actions.yml # GitHub Actions for CI/CD deployment
-│   ├── index.js               # Initializes Prebid.js and requests bids
-│── public/
-│   ├── index.html             # Sample webpage with ad placement
-│── README.md
-```
 
 ## Installation
 This project does **not** require `npm install`, as it uses Prebid.js via CDN. However, if you want to bundle the JavaScript using Webpack, follow these steps:
