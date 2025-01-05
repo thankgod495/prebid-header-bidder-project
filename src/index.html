@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prebid.js Header Bidding</title>
+
+    <!-- Load Prebid.js -->
+    <script async src="https://acdn.adnxs.com/prebid/not-for-prod/1/prebid.js"></script>
+    
+    <!-- Google Publisher Tag (GPT) for Ad Rendering -->
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+
+    <style>
+        .ad-container {
+            text-align: center;
+            margin: 20px 0;
+            min-width: 300px;
+            min-height: 250px;
+            background-color: #f4f4f4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Prebid.js Header Bidding Implementation</h1>
+    
+    <!-- Ad Slot Matching `adUnits.js` -->
+    <div id="banner-ad-slot" class="ad-container">Banner Ad Loading...</div>
+
+    <!-- Include the main JavaScript file -->
+    <script src="./src/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+name: Deploy Prebid.js Implementation
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run Linter
+        run: npm run lint
+
+      - name: Deploy to Server
+        run: |
+          scp -r * user@your-server.com:/var/www/html/prebid
