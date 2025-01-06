@@ -11,8 +11,8 @@ export const trackBids = (validBids) => {
       window.gtag('event', 'ad_bid', {
         event_category: 'Header Bidding',
         event_label: bid.bidder,
-        value: bid.price,  // Bid price in dollars
-        latency: bid.timeToRespond,  // Time taken for bid response
+        value: bid.price,  
+        latency: bid.timeToRespond,  
         currency: 'USD'
       });
     });

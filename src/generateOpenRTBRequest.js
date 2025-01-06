@@ -18,11 +18,11 @@ export const generateOpenRTBRequest = () => {
       domain: window.location.hostname // Current page domain
     },
     device: {
-      ua: navigator.userAgent, // User agent string
-      ip: '192.168.1.1' // Placeholder IP (replace with dynamic IP if available)
+      ua: navigator.userAgent, 
+      ip: '192.168.1.1'
     },
     user: {
-      id: 'user-unique-id' // Example user ID, integrate with your identity framework if available
+      id: 'user-unique-id' 
     }
   };
 };

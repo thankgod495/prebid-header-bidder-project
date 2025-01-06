@@ -30,9 +30,8 @@ export const requestBids = () => {
   });
 };
 
-// Validate Bid (For example: Validate bid price and compatibility)
+// Validate Bid 
 const validateBid = (bid) => {
-  // Example validation logic
   return bid.price >= 0.30 && bid.creative_type === 'banner';
 };
 
